@@ -13,13 +13,15 @@ from crtsh import crtshAPI
 
 
 if len(sys.argv)==1:
-    print("[*] Usage: python3 "+sys.argv[0]+" domain")
+    print("[*] Usage: python3 "+sys.argv[0]+" [domain]")
     sys.exit()
 
 domain = sys.argv[1]
 
 def subd(domain):
-    print("[+] Searching for domain : " + domain)
+    print("[+] Searching for subdomains : " + domain)
+    print()
+    print()
     subdomains = []
 
     ##### Subfinder ######
