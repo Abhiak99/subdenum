@@ -19,6 +19,7 @@ if len(sys.argv)==1:
 domain = sys.argv[1]
 
 def subd(domain):
+    print("[+] Searching for domain : " + domain)
     subdomains = []
 
     ##### Subfinder ######
