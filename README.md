@@ -9,6 +9,6 @@ This is a tool helpful for subdomain enumeration
 
 # Usage
 
-` python3 subdenum {domain} `
+` python3 subdenum.py {domain} `
 
 
