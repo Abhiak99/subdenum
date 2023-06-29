@@ -34,7 +34,7 @@ def subd(domain):
 
     ##### Assetfinder ######
     try:
-        assetfinderoutput = run(["assetfinder",domain], stderr=PIPE, stdout=PIPE, shell=False, text=True)
+        assetfinderoutput = run(["assetfinder","--subs-only",domain], stderr=PIPE, stdout=PIPE, shell=False, text=True)
         subdomains += list(assetfinderoutput.stdout.splitlines())
     except Exception as _:
         print("Assefinder Error")
@@ -84,4 +84,7 @@ def subd(domain):
     return subdomains
 
 
-subd(domain) 
+subdomains = subd(domain) 
+with open(domain.split('.')[0]+'.txt','w') as file:
+    for item in subdomains:
+        file.write(item+'\n')
