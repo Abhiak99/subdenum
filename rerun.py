@@ -5,6 +5,7 @@ if len(sys.argv) != 2:
 
 f = open(sys.argv[1], "rt")
 for subdomains in f:
-	subdenum.subd(subdomains.strip())
+	# subdenum.subd(subdomains.strip())
+	print(subdomains)
 
 f.close()
