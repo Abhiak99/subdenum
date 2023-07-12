@@ -1,6 +1,10 @@
 from nslookup import Nslookup
 import json
-f = open("domains.txt", "rt")
+import sys
+if len(sys.argv) != 2:
+	print("[*] Usage python3 %s [subdomain.txt]" % sys.argv[0])
+	sys.exit()
+f = open(sys.argv[1], "rt")
 ips = {}
 
 for domain in f:
