@@ -48,11 +48,11 @@ def subd(domain):
 
 
     ##### Amass ######
-    try:
-        amassoutput = run(["amass","enum","-passive","-norecursive","-noalts","-d",domain], stderr=PIPE, stdout=PIPE, shell=False, text=True)
-        subdomains += list(amassoutput.stdout.splitlines())
-    except Exception as _:
-        print("Amass Error")
+    # try:
+    #     amassoutput = run(["amass","enum","-passive","-norecursive","-noalts","-d",domain], stderr=PIPE, stdout=PIPE, shell=False, text=True)
+    #     subdomains += list(amassoutput.stdout.splitlines())
+    # except Exception as _:
+    #     print("Amass Error")
 
     ###### SONAR Project API ####### not working rn
 
