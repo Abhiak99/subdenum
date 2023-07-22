@@ -20,7 +20,7 @@ f.close()
 
 f = open("alivesubdomains.txt","w")
 for i in ips.keys():
-    f.write(i+"\n")
+    f.write(i+" "+str(ips[i])+"\n")
 f.close()
 y = json.dumps(ips)
 print(y)
