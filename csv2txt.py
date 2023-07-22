@@ -17,4 +17,4 @@ with open("download_csv.csv", "rt") as csvfile, open("target_scope.txt", "wt") a
 	for line in lines:
 		k = change(line)
 		if k!=None:
-			target.write(str(k).strip("http://*.")+"\n")
+			target.write(str(k).strip("http://").strip("*").strip(".")+"\n")
