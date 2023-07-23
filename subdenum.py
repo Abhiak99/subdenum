@@ -85,6 +85,7 @@ def subd(domain):
 
 
 subdomains = subd(domain) 
-with open(domain.split('.')[0]+'.txt','a') as file:
+#with open(domain.split('.')[0]+'.txt','a') as file:
+with open(domain.replace('.','_')+'.txt','a') as file:
     for item in subdomains:
         file.write(item+'\n')
