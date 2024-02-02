@@ -26,7 +26,7 @@ def subd(domain):
 
     ##### Subfinder ######
     try:
-        subfinderoutput = run(["subfinder","-d",domain], stderr=PIPE, stdout=PIPE, shell=False, text=True)
+        subfinderoutput = run(["subfinder","-d",domain,"-all"], stderr=PIPE, stdout=PIPE, shell=False, text=True)
         subdomains += list(subfinderoutput.stdout.splitlines())
     except Exception as _:
         print("Subfinder Error")
