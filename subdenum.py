@@ -10,8 +10,8 @@ from pymongo import MongoClient
 from crtsh import crtshAPI
 
 
-if len(sys.argv)==1:
-    print("[*] Usage: python3 "+sys.argv[0]+" [domain]")
+if len(sys.argv) < 2:
+    print(f"[*] Usage: python3 {sys.argv[0]} [domain]")
     sys.exit()
 
 domain = sys.argv[1]
