@@ -1,13 +1,11 @@
 from subprocess import run,PIPE
 import requests
 import sublist3r
-import subprocess
 import os
 import sys
 import json
 import dnsdumpster
 import re
-import sys
 from pymongo import MongoClient
 from crtsh import crtshAPI
 
